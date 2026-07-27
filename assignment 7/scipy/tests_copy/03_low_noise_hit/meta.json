@@ -1,0 +1,8 @@
+{
+  "name": "03_low_noise_hit",
+  "category": "noise",
+  "description": "Light Gaussian noise (std=0.1); should still fit cleanly.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 18.303909"
+}

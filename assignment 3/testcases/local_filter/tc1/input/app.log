@@ -1,0 +1,5 @@
+2024-07-10 08:15:22 INFO svc=auth msg="Starting service"
+2024-07-10 08:15:23 ERROR svc=auth code=E1001 msg="Connection refused"
+2024-07-10 08:16:01 ERROR db code=E2002 msg="timeout waiting for response"
+2024-07-10 08:16:45 ERROR cache extra1 extra2 code=E3003 msg="cache miss exceeded threshold"
+2024-07-10 08:17:00 WARN svc=auth msg="retry scheduled"

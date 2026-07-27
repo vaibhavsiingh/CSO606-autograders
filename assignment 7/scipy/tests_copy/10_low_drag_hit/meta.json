@@ -1,0 +1,8 @@
+{
+  "name": "10_low_drag_hit",
+  "category": "boundary",
+  "description": "Low drag coefficient K=0.001 (near-ballistic).",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 16.248743"
+}

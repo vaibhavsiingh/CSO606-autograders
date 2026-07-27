@@ -1,0 +1,8 @@
+{
+  "name": "20_close_call_hit",
+  "category": "stress",
+  "description": "Interception occurs near the edge of the blast radius (tight timing).",
+  "weight": 3,
+  "timeout_s": 15,
+  "expected": "HIT 17.443974"
+}

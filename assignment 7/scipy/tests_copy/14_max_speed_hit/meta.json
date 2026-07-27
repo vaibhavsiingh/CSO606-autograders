@@ -1,0 +1,8 @@
+{
+  "name": "14_max_speed_hit",
+  "category": "edge_launch",
+  "description": "Maximum allowed SPEED=500.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 13.245251"
+}

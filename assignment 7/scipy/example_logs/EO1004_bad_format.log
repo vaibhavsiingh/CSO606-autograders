@@ -1,0 +1,187 @@
+Autograder log for EO1004_bad_format
+Script: example_submissions/EO1004_bad_format/q2/projectile.py
+Tests directory: tests
+==============================================================================
+
+[   FORMAT_ERROR] 01_clean_hit_basic  (weight=1, awarded=0.00)
+    category   : basic
+    description: No observation noise; straightforward hit.
+    expected   : HIT 13.803992
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.015s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 02_clean_miss_basic  (weight=1, awarded=0.00)
+    category   : basic
+    description: No observation noise; interceptor clearly misses.
+    expected   : MISS
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.015s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 03_low_noise_hit  (weight=2, awarded=0.00)
+    category   : noise
+    description: Light Gaussian noise (std=0.1); should still fit cleanly.
+    expected   : HIT 18.303909
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.013s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 04_low_noise_miss  (weight=2, awarded=0.00)
+    category   : noise
+    description: Light Gaussian noise (std=0.1); interceptor misses.
+    expected   : MISS
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.014s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 05_moderate_noise_hit  (weight=2, awarded=0.00)
+    category   : noise
+    description: Moderate noise (std=0.5) across 20 observations.
+    expected   : HIT 19.982568
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.014s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 06_moderate_noise_miss  (weight=2, awarded=0.00)
+    category   : noise
+    description: Moderate noise (std=0.5); interceptor misses.
+    expected   : MISS
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.015s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 07_min_n_boundary_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: Minimum allowed N=5 observations.
+    expected   : HIT 11.173403
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.015s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 08_max_n_boundary_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: Large N=100 observations (throughput / performance check).
+    expected   : HIT 44.047879
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.014s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 09_high_drag_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: High drag coefficient K=0.1 (near upper bound).
+    expected   : HIT 9.496094
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.014s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 10_low_drag_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: Low drag coefficient K=0.001 (near-ballistic).
+    expected   : HIT 16.248743
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.016s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 11_shallow_angle_miss  (weight=2, awarded=0.00)
+    category   : edge_launch
+    description: Very shallow launch angle; interceptor stays low and misses.
+    expected   : MISS
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.016s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 12_steep_angle_hit  (weight=2, awarded=0.00)
+    category   : edge_launch
+    description: Near-vertical launch angle (close to 90 deg).
+    expected   : HIT 15.020313
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.016s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 13_min_speed_miss  (weight=2, awarded=0.00)
+    category   : edge_launch
+    description: Minimum allowed SPEED=1; interceptor barely moves and misses.
+    expected   : MISS
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.016s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 14_max_speed_hit  (weight=2, awarded=0.00)
+    category   : edge_launch
+    description: Maximum allowed SPEED=500.
+    expected   : HIT 13.245251
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.017s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 15_irregular_timestamps_hit  (weight=2, awarded=0.00)
+    category   : timing
+    description: Highly irregular observation spacing.
+    expected   : HIT 23.740538
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.018s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 16_partial_flight_extrapolation_hit  (weight=2, awarded=0.00)
+    category   : timing
+    description: Observations cover only the early flight; large forward extrapolation required.
+    expected   : HIT 14.209411
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.015s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 17_long_transit_miss  (weight=2, awarded=0.00)
+    category   : timing
+    description: Asteroid trajectory moves away; no interception ever occurs.
+    expected   : MISS
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.013s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 18_stress_high_noise_hit  (weight=3, awarded=0.00)
+    category   : stress
+    description: Large N=50 with heavy noise (std=2.0); tests fit robustness.
+    expected   : HIT 27.739281
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.015s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 19_first_obs_at_zero_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: First observation exactly at t=0.
+    expected   : HIT 11.796836
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.015s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+[   FORMAT_ERROR] 20_close_call_hit  (weight=3, awarded=0.00)
+    category   : stress
+    description: Interception occurs near the edge of the blast radius (tight timing).
+    expected   : HIT 17.443974
+    actual     : 'Result: probably a hit around t=12ish, not totally sure'
+    elapsed    : 0.015s
+    detail     : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+    note       : unparseable output: 'Result: probably a hit around t=12ish, not totally sure'
+
+==============================================================================
+TOTAL MARKS: 0.00 / 40

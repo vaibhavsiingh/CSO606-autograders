@@ -1,0 +1,8 @@
+{
+  "name": "13_min_speed_miss",
+  "category": "edge_launch",
+  "description": "Minimum allowed SPEED=1; interceptor barely moves and misses.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "MISS"
+}

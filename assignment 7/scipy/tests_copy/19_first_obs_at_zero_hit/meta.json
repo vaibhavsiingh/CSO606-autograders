@@ -1,0 +1,8 @@
+{
+  "name": "19_first_obs_at_zero_hit",
+  "category": "boundary",
+  "description": "First observation exactly at t=0.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 11.796836"
+}

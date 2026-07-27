@@ -1,0 +1,8 @@
+{
+  "name": "01_clean_hit_basic",
+  "category": "basic",
+  "description": "No observation noise; straightforward hit.",
+  "weight": 1,
+  "timeout_s": 15,
+  "expected": "HIT 13.803992"
+}

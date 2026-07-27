@@ -1,0 +1,8 @@
+{
+  "name": "02_clean_miss_basic",
+  "category": "basic",
+  "description": "No observation noise; interceptor clearly misses.",
+  "weight": 1,
+  "timeout_s": 15,
+  "expected": "MISS"
+}

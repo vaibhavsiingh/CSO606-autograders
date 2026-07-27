@@ -1,0 +1,8 @@
+{
+  "name": "12_steep_angle_hit",
+  "category": "edge_launch",
+  "description": "Near-vertical launch angle (close to 90 deg).",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 15.020313"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "17_long_transit_miss",
+  "category": "timing",
+  "description": "Asteroid trajectory moves away; no interception ever occurs.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "MISS"
+}

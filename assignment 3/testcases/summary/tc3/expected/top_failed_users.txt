@@ -1,0 +1,10 @@
+root 9
+oracle 8
+postgres 7
+deploy 6
+backup 5
+guest 4
+admin 3
+ftp 2
+test 2
+user10 1

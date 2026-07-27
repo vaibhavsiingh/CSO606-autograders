@@ -1,0 +1,165 @@
+{
+  "total_weight": 40,
+  "cases": [
+    {
+      "name": "01_clean_hit_basic",
+      "category": "basic",
+      "description": "No observation noise; straightforward hit.",
+      "weight": 1,
+      "timeout_s": 15,
+      "expected": "HIT 13.803992"
+    },
+    {
+      "name": "02_clean_miss_basic",
+      "category": "basic",
+      "description": "No observation noise; interceptor clearly misses.",
+      "weight": 1,
+      "timeout_s": 15,
+      "expected": "MISS"
+    },
+    {
+      "name": "03_low_noise_hit",
+      "category": "noise",
+      "description": "Light Gaussian noise (std=0.1); should still fit cleanly.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 18.303909"
+    },
+    {
+      "name": "04_low_noise_miss",
+      "category": "noise",
+      "description": "Light Gaussian noise (std=0.1); interceptor misses.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "MISS"
+    },
+    {
+      "name": "05_moderate_noise_hit",
+      "category": "noise",
+      "description": "Moderate noise (std=0.5) across 20 observations.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 19.982568"
+    },
+    {
+      "name": "06_moderate_noise_miss",
+      "category": "noise",
+      "description": "Moderate noise (std=0.5); interceptor misses.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "MISS"
+    },
+    {
+      "name": "07_min_n_boundary_hit",
+      "category": "boundary",
+      "description": "Minimum allowed N=5 observations.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 11.173403"
+    },
+    {
+      "name": "08_max_n_boundary_hit",
+      "category": "boundary",
+      "description": "Large N=100 observations (throughput / performance check).",
+      "weight": 2,
+      "timeout_s": 20,
+      "expected": "HIT 44.047879"
+    },
+    {
+      "name": "09_high_drag_hit",
+      "category": "boundary",
+      "description": "High drag coefficient K=0.1 (near upper bound).",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 9.496094"
+    },
+    {
+      "name": "10_low_drag_hit",
+      "category": "boundary",
+      "description": "Low drag coefficient K=0.001 (near-ballistic).",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 16.248743"
+    },
+    {
+      "name": "11_shallow_angle_miss",
+      "category": "edge_launch",
+      "description": "Very shallow launch angle; interceptor stays low and misses.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "MISS"
+    },
+    {
+      "name": "12_steep_angle_hit",
+      "category": "edge_launch",
+      "description": "Near-vertical launch angle (close to 90 deg).",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 15.020313"
+    },
+    {
+      "name": "13_min_speed_miss",
+      "category": "edge_launch",
+      "description": "Minimum allowed SPEED=1; interceptor barely moves and misses.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "MISS"
+    },
+    {
+      "name": "14_max_speed_hit",
+      "category": "edge_launch",
+      "description": "Maximum allowed SPEED=500.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 13.245251"
+    },
+    {
+      "name": "15_irregular_timestamps_hit",
+      "category": "timing",
+      "description": "Highly irregular observation spacing.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 23.740538"
+    },
+    {
+      "name": "16_partial_flight_extrapolation_hit",
+      "category": "timing",
+      "description": "Observations cover only the early flight; large forward extrapolation required.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 14.209411"
+    },
+    {
+      "name": "17_long_transit_miss",
+      "category": "timing",
+      "description": "Asteroid trajectory moves away; no interception ever occurs.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "MISS"
+    },
+    {
+      "name": "18_stress_high_noise_hit",
+      "category": "stress",
+      "description": "Large N=50 with heavy noise (std=2.0); tests fit robustness.",
+      "weight": 3,
+      "timeout_s": 15,
+      "expected": "HIT 27.739281"
+    },
+    {
+      "name": "19_first_obs_at_zero_hit",
+      "category": "boundary",
+      "description": "First observation exactly at t=0.",
+      "weight": 2,
+      "timeout_s": 15,
+      "expected": "HIT 11.796836"
+    },
+    {
+      "name": "20_close_call_hit",
+      "category": "stress",
+      "description": "Interception occurs near the edge of the blast radius (tight timing).",
+      "weight": 3,
+      "timeout_s": 15,
+      "expected": "HIT 17.443974"
+    }
+  ]
+}

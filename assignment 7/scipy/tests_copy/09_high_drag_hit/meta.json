@@ -1,0 +1,8 @@
+{
+  "name": "09_high_drag_hit",
+  "category": "boundary",
+  "description": "High drag coefficient K=0.1 (near upper bound).",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 9.496094"
+}

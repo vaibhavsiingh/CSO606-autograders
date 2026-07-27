@@ -1,0 +1,5 @@
+2024-08-01 00:00:01 DEBUG ERRORHANDLER config=default
+2024-08-01 00:00:02 ERROR svc=api code=E4004 msg="malformed request"
+2024-08-01 00:00:03 INFO svc=api msg="no issues"
+2024-08-01 00:00:04 ERROR svc=billing region=us code=E5005 msg="ledger mismatch"
+2024-08-01 00:00:05 ERROR msg="unparseable line with no code field at all"

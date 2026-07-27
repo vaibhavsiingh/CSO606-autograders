@@ -1,0 +1,8 @@
+{
+  "name": "16_partial_flight_extrapolation_hit",
+  "category": "timing",
+  "description": "Observations cover only the early flight; large forward extrapolation required.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 14.209411"
+}

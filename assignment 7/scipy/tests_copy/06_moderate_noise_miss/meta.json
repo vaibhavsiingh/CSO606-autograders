@@ -1,0 +1,8 @@
+{
+  "name": "06_moderate_noise_miss",
+  "category": "noise",
+  "description": "Moderate noise (std=0.5); interceptor misses.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "MISS"
+}

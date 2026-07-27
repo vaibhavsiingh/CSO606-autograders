@@ -1,0 +1,8 @@
+{
+  "name": "18_stress_high_noise_hit",
+  "category": "stress",
+  "description": "Large N=50 with heavy noise (std=2.0); tests fit robustness.",
+  "weight": 3,
+  "timeout_s": 15,
+  "expected": "HIT 27.739281"
+}

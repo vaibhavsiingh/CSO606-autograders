@@ -1,0 +1,5 @@
+2024-09-09 12:00:00 INFO msg="startup complete"
+2024-09-09 12:00:01 ERROR svc=gw code=E10 msg="short code"
+2024-09-09 12:00:02 ERROR a b c d e code=E999999 msg="long preamble"
+2024-09-09 12:00:03 WARN svc=gw code=E1234 msg="warn lines must be excluded"
+2024-09-09 12:00:04 ERROR svc=gw code=E6006 msg="gateway down"

@@ -1,0 +1,8 @@
+{
+  "name": "05_moderate_noise_hit",
+  "category": "noise",
+  "description": "Moderate noise (std=0.5) across 20 observations.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 19.982568"
+}

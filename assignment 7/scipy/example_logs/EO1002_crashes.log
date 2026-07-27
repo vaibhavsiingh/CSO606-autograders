@@ -1,0 +1,267 @@
+Autograder log for EO1002_crashes
+Script: example_submissions/EO1002_crashes/q2/projectile.py
+Tests directory: tests
+==============================================================================
+
+[  RUNTIME_ERROR] 01_clean_hit_basic  (weight=1, awarded=0.00)
+    category   : basic
+    description: No observation noise; straightforward hit.
+    expected   : HIT 13.803992
+    elapsed    : 0.015s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 02_clean_miss_basic  (weight=1, awarded=0.00)
+    category   : basic
+    description: No observation noise; interceptor clearly misses.
+    expected   : MISS
+    elapsed    : 0.016s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 03_low_noise_hit  (weight=2, awarded=0.00)
+    category   : noise
+    description: Light Gaussian noise (std=0.1); should still fit cleanly.
+    expected   : HIT 18.303909
+    elapsed    : 0.018s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 04_low_noise_miss  (weight=2, awarded=0.00)
+    category   : noise
+    description: Light Gaussian noise (std=0.1); interceptor misses.
+    expected   : MISS
+    elapsed    : 0.015s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 05_moderate_noise_hit  (weight=2, awarded=0.00)
+    category   : noise
+    description: Moderate noise (std=0.5) across 20 observations.
+    expected   : HIT 19.982568
+    elapsed    : 0.018s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 06_moderate_noise_miss  (weight=2, awarded=0.00)
+    category   : noise
+    description: Moderate noise (std=0.5); interceptor misses.
+    expected   : MISS
+    elapsed    : 0.018s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 07_min_n_boundary_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: Minimum allowed N=5 observations.
+    expected   : HIT 11.173403
+    elapsed    : 0.014s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 08_max_n_boundary_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: Large N=100 observations (throughput / performance check).
+    expected   : HIT 44.047879
+    elapsed    : 0.013s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 09_high_drag_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: High drag coefficient K=0.1 (near upper bound).
+    expected   : HIT 9.496094
+    elapsed    : 0.015s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 10_low_drag_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: Low drag coefficient K=0.001 (near-ballistic).
+    expected   : HIT 16.248743
+    elapsed    : 0.016s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 11_shallow_angle_miss  (weight=2, awarded=0.00)
+    category   : edge_launch
+    description: Very shallow launch angle; interceptor stays low and misses.
+    expected   : MISS
+    elapsed    : 0.017s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 12_steep_angle_hit  (weight=2, awarded=0.00)
+    category   : edge_launch
+    description: Near-vertical launch angle (close to 90 deg).
+    expected   : HIT 15.020313
+    elapsed    : 0.016s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 13_min_speed_miss  (weight=2, awarded=0.00)
+    category   : edge_launch
+    description: Minimum allowed SPEED=1; interceptor barely moves and misses.
+    expected   : MISS
+    elapsed    : 0.016s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 14_max_speed_hit  (weight=2, awarded=0.00)
+    category   : edge_launch
+    description: Maximum allowed SPEED=500.
+    expected   : HIT 13.245251
+    elapsed    : 0.014s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 15_irregular_timestamps_hit  (weight=2, awarded=0.00)
+    category   : timing
+    description: Highly irregular observation spacing.
+    expected   : HIT 23.740538
+    elapsed    : 0.015s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 16_partial_flight_extrapolation_hit  (weight=2, awarded=0.00)
+    category   : timing
+    description: Observations cover only the early flight; large forward extrapolation required.
+    expected   : HIT 14.209411
+    elapsed    : 0.015s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 17_long_transit_miss  (weight=2, awarded=0.00)
+    category   : timing
+    description: Asteroid trajectory moves away; no interception ever occurs.
+    expected   : MISS
+    elapsed    : 0.014s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 18_stress_high_noise_hit  (weight=3, awarded=0.00)
+    category   : stress
+    description: Large N=50 with heavy noise (std=2.0); tests fit robustness.
+    expected   : HIT 27.739281
+    elapsed    : 0.013s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 19_first_obs_at_zero_hit  (weight=2, awarded=0.00)
+    category   : boundary
+    description: First observation exactly at t=0.
+    expected   : HIT 11.796836
+    elapsed    : 0.015s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+[  RUNTIME_ERROR] 20_close_call_hit  (weight=3, awarded=0.00)
+    category   : stress
+    description: Interception occurs near the edge of the blast radius (tight timing).
+    expected   : HIT 17.443974
+    elapsed    : 0.015s
+    detail     : exit code 1
+    stderr (tail):
+        Traceback (most recent call last):
+          File "/home/claude/autograder/example_submissions/EO1002_crashes/q2/projectile.py", line 10, in <module>
+            t, x, y = lines[i].split()
+            ^^^^^^^
+        ValueError: not enough values to unpack (expected 3, got 2)
+
+==============================================================================
+TOTAL MARKS: 0.00 / 40

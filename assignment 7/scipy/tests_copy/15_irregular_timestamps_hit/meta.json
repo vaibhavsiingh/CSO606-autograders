@@ -1,0 +1,8 @@
+{
+  "name": "15_irregular_timestamps_hit",
+  "category": "timing",
+  "description": "Highly irregular observation spacing.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 23.740538"
+}

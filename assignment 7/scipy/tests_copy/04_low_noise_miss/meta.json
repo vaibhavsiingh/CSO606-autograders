@@ -1,0 +1,8 @@
+{
+  "name": "04_low_noise_miss",
+  "category": "noise",
+  "description": "Light Gaussian noise (std=0.1); interceptor misses.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "MISS"
+}

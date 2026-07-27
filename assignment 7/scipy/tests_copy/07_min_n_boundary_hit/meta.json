@@ -1,0 +1,8 @@
+{
+  "name": "07_min_n_boundary_hit",
+  "category": "boundary",
+  "description": "Minimum allowed N=5 observations.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "HIT 11.173403"
+}

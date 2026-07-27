@@ -1,0 +1,8 @@
+{
+  "name": "08_max_n_boundary_hit",
+  "category": "boundary",
+  "description": "Large N=100 observations (throughput / performance check).",
+  "weight": 2,
+  "timeout_s": 20,
+  "expected": "HIT 44.047879"
+}

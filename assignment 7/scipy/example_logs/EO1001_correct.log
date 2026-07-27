@@ -1,0 +1,161 @@
+Autograder log for EO1001_correct
+Script: example_submissions/EO1001_correct/q2/projectile.py
+Tests directory: tests
+==============================================================================
+
+[        CORRECT] 01_clean_hit_basic  (weight=1, awarded=1.00)
+    category   : basic
+    description: No observation noise; straightforward hit.
+    expected   : HIT 13.803992
+    actual     : 'HIT 13.803992'
+    elapsed    : 0.68s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 02_clean_miss_basic  (weight=1, awarded=1.00)
+    category   : basic
+    description: No observation noise; interceptor clearly misses.
+    expected   : MISS
+    actual     : 'MISS'
+    elapsed    : 0.648s
+
+[        CORRECT] 03_low_noise_hit  (weight=2, awarded=2.00)
+    category   : noise
+    description: Light Gaussian noise (std=0.1); should still fit cleanly.
+    expected   : HIT 18.303909
+    actual     : 'HIT 18.303909'
+    elapsed    : 0.645s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 04_low_noise_miss  (weight=2, awarded=2.00)
+    category   : noise
+    description: Light Gaussian noise (std=0.1); interceptor misses.
+    expected   : MISS
+    actual     : 'MISS'
+    elapsed    : 0.661s
+
+[        CORRECT] 05_moderate_noise_hit  (weight=2, awarded=2.00)
+    category   : noise
+    description: Moderate noise (std=0.5) across 20 observations.
+    expected   : HIT 19.982568
+    actual     : 'HIT 19.982568'
+    elapsed    : 0.731s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 06_moderate_noise_miss  (weight=2, awarded=2.00)
+    category   : noise
+    description: Moderate noise (std=0.5); interceptor misses.
+    expected   : MISS
+    actual     : 'MISS'
+    elapsed    : 0.67s
+
+[        CORRECT] 07_min_n_boundary_hit  (weight=2, awarded=2.00)
+    category   : boundary
+    description: Minimum allowed N=5 observations.
+    expected   : HIT 11.173403
+    actual     : 'HIT 11.173403'
+    elapsed    : 0.667s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 08_max_n_boundary_hit  (weight=2, awarded=2.00)
+    category   : boundary
+    description: Large N=100 observations (throughput / performance check).
+    expected   : HIT 44.047879
+    actual     : 'HIT 44.047879'
+    elapsed    : 0.7s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 09_high_drag_hit  (weight=2, awarded=2.00)
+    category   : boundary
+    description: High drag coefficient K=0.1 (near upper bound).
+    expected   : HIT 9.496094
+    actual     : 'HIT 9.496094'
+    elapsed    : 0.684s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 10_low_drag_hit  (weight=2, awarded=2.00)
+    category   : boundary
+    description: Low drag coefficient K=0.001 (near-ballistic).
+    expected   : HIT 16.248743
+    actual     : 'HIT 16.248743'
+    elapsed    : 0.681s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 11_shallow_angle_miss  (weight=2, awarded=2.00)
+    category   : edge_launch
+    description: Very shallow launch angle; interceptor stays low and misses.
+    expected   : MISS
+    actual     : 'MISS'
+    elapsed    : 0.661s
+
+[        CORRECT] 12_steep_angle_hit  (weight=2, awarded=2.00)
+    category   : edge_launch
+    description: Near-vertical launch angle (close to 90 deg).
+    expected   : HIT 15.020313
+    actual     : 'HIT 15.020313'
+    elapsed    : 0.69s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 13_min_speed_miss  (weight=2, awarded=2.00)
+    category   : edge_launch
+    description: Minimum allowed SPEED=1; interceptor barely moves and misses.
+    expected   : MISS
+    actual     : 'MISS'
+    elapsed    : 0.65s
+
+[        CORRECT] 14_max_speed_hit  (weight=2, awarded=2.00)
+    category   : edge_launch
+    description: Maximum allowed SPEED=500.
+    expected   : HIT 13.245251
+    actual     : 'HIT 13.245251'
+    elapsed    : 0.704s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 15_irregular_timestamps_hit  (weight=2, awarded=2.00)
+    category   : timing
+    description: Highly irregular observation spacing.
+    expected   : HIT 23.740538
+    actual     : 'HIT 23.740538'
+    elapsed    : 0.676s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 16_partial_flight_extrapolation_hit  (weight=2, awarded=2.00)
+    category   : timing
+    description: Observations cover only the early flight; large forward extrapolation required.
+    expected   : HIT 14.209411
+    actual     : 'HIT 14.209411'
+    elapsed    : 0.702s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 17_long_transit_miss  (weight=2, awarded=2.00)
+    category   : timing
+    description: Asteroid trajectory moves away; no interception ever occurs.
+    expected   : MISS
+    actual     : 'MISS'
+    elapsed    : 0.69s
+
+[        CORRECT] 18_stress_high_noise_hit  (weight=3, awarded=3.00)
+    category   : stress
+    description: Large N=50 with heavy noise (std=2.0); tests fit robustness.
+    expected   : HIT 27.739281
+    actual     : 'HIT 27.739281'
+    elapsed    : 0.694s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 19_first_obs_at_zero_hit  (weight=2, awarded=2.00)
+    category   : boundary
+    description: First observation exactly at t=0.
+    expected   : HIT 11.796836
+    actual     : 'HIT 11.796836'
+    elapsed    : 0.687s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+[        CORRECT] 20_close_call_hit  (weight=3, awarded=3.00)
+    category   : stress
+    description: Interception occurs near the edge of the blast radius (tight timing).
+    expected   : HIT 17.443974
+    actual     : 'HIT 17.443974'
+    elapsed    : 0.694s
+    time diff  : 0.0s (tol full=0.001, partial=1.0)
+
+==============================================================================
+TOTAL MARKS: 40.00 / 40

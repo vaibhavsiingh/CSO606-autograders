@@ -1,0 +1,3 @@
+src/legacy/net/adapter_boot.c
+src/legacy/net/adapter_reset.h
+src/module2/drivers/usb/adapter_probe.c

@@ -1,0 +1,8 @@
+{
+  "name": "11_shallow_angle_miss",
+  "category": "edge_launch",
+  "description": "Very shallow launch angle; interceptor stays low and misses.",
+  "weight": 2,
+  "timeout_s": 15,
+  "expected": "MISS"
+}
